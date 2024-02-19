@@ -1,0 +1,13 @@
+Package: dashScoreIndicator
+Title: Indicator to show score based on react-score-indictor
+Version: 0.0.1
+Description: Indicator to show score based on react-score-indictor
+Depends: R (>= 3.0.2)
+Imports: 
+Suggests: 
+License: MIT + file LICENSE
+URL: https://github.com/Simon-U/dash-score-indicator
+BugReports: https://github.com/Simon-U/dash-score-indicator/issues
+Encoding: UTF-8
+LazyData: true
+KeepSource: true

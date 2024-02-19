@@ -1,0 +1,11 @@
+include dash_score_indicator/dash_score_indicator.min.js
+include dash_score_indicator/dash_score_indicator.min.js.map
+include dash_score_indicator/async-*.js
+include dash_score_indicator/async-*.js.map
+include dash_score_indicator/*-shared.js
+include dash_score_indicator/*-shared.js.map
+include dash_score_indicator/metadata.json
+include dash_score_indicator/package-info.json
+include README.md
+include LICENSE
+include package.json

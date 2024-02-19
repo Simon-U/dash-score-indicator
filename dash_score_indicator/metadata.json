@@ -1,0 +1,81 @@
+{
+  "src/lib/components/ScoreIndicator.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
+    "displayName": "ScoreIndicator",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "value": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Current score value"
+      },
+      "maxValue": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Max score value"
+      },
+      "stepsColors": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Array of hex colors for the steps. Default [\n  '#d12000',\n  '#ed8d00',\n  '#f1bc00',\n  '#84c42b',\n  '#53b83a',\n  '#3da940',\n  '#3da940',\n  '#3da940',\n    ]",
+        "defaultValue": {
+          "value": "[\n    \"#6b90b2\",\n    \"#6b90b2\",\n    \"#6b90b2\",\n    \"#6b90b2\",\n    \"#6b90b2\",\n    \"#6b90b2\",\n    \"#d12000\",\n    \"#d12000\",\n]",
+          "computed": false
+        }
+      },
+      "lineWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "OPtional: Width of the line indicating the score, default is 5",
+        "defaultValue": {
+          "value": "5",
+          "computed": false
+        }
+      },
+      "lineGap": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Gaps between the lines, default is 5",
+        "defaultValue": {
+          "value": "5",
+          "computed": false
+        }
+      },
+      "fadedOpacity": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Opacity of faded parts, default is 40",
+        "defaultValue": {
+          "value": "40",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called to report property changes\nto Dash, to make them available for callbacks."
+      }
+    }
+  }
+}
