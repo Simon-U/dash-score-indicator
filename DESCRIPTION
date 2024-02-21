@@ -1,6 +1,6 @@
 Package: dashScoreIndicator
 Title: Indicator to show score based on react-score-indictor
-Version: 0.0.1
+Version: 0.0.98
 Description: Indicator to show score based on react-score-indictor
 Depends: R (>= 3.0.2)
 Imports: 

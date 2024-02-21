@@ -94,6 +94,17 @@
           "computed": false
         }
       },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "200",
+          "computed": false
+        }
+      },
       "setProps": {
         "type": {
           "name": "func"

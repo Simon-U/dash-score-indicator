@@ -28,9 +28,10 @@ Keyword arguments:
   '#3da940',
     ]
 - `value` (Real; optional): Current score value
+- `width` (Real; optional)
 """
 function scoreindicator(; kwargs...)
-        available_props = Symbol[:id, :fadedOpacity, :lineGap, :lineWidth, :maxValue, :stepsColors, :value]
+        available_props = Symbol[:id, :fadedOpacity, :lineGap, :lineWidth, :maxValue, :stepsColors, :value, :width]
         wild_props = Symbol[]
         return Component("scoreindicator", "ScoreIndicator", "dash_score_indicator", available_props, wild_props; kwargs...)
 end

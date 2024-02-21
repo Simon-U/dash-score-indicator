@@ -34,16 +34,18 @@ Keyword arguments:
     '#3da940',   '#3da940',     ].
 
 - value (number; optional):
-    Current score value."""
+    Current score value.
+
+- width (number; default 200)"""
     _children_props = []
     _base_nodes = ['children']
     _namespace = 'dash_score_indicator'
     _type = 'ScoreIndicator'
     @_explicitize_args
-    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.UNDEFINED, stepsColors=Component.UNDEFINED, lineWidth=Component.UNDEFINED, lineGap=Component.UNDEFINED, fadedOpacity=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value']
+    def __init__(self, id=Component.UNDEFINED, value=Component.UNDEFINED, maxValue=Component.UNDEFINED, stepsColors=Component.UNDEFINED, lineWidth=Component.UNDEFINED, lineGap=Component.UNDEFINED, fadedOpacity=Component.UNDEFINED, width=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value', 'width']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value']
+        self.available_properties = ['id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value', 'width']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()

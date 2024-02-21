@@ -11,7 +11,7 @@ ExampleComponent is an example component. It takes a property, `label`, and disp
 
 \usage{
 scoreIndicator(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=NULL,
-maxValue=NULL, stepsColors=NULL, value=NULL)
+maxValue=NULL, stepsColors=NULL, value=NULL, width=NULL)
 }
 
 \arguments{
@@ -37,6 +37,8 @@ maxValue=NULL, stepsColors=NULL, value=NULL)
     ]}
 
 \item{value}{Numeric. Current score value}
+
+\item{width}{Numeric. }
 }
 
 \value{named list of JSON elements corresponding to React.js properties and their values}

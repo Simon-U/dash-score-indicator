@@ -1,9 +1,9 @@
 # AUTO GENERATED FILE - DO NOT EDIT
 
 #' @export
-scoreIndicator <- function(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=NULL, maxValue=NULL, stepsColors=NULL, value=NULL) {
+scoreIndicator <- function(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=NULL, maxValue=NULL, stepsColors=NULL, value=NULL, width=NULL) {
     
-    props <- list(id=id, fadedOpacity=fadedOpacity, lineGap=lineGap, lineWidth=lineWidth, maxValue=maxValue, stepsColors=stepsColors, value=value)
+    props <- list(id=id, fadedOpacity=fadedOpacity, lineGap=lineGap, lineWidth=lineWidth, maxValue=maxValue, stepsColors=stepsColors, value=value, width=width)
     if (length(props) > 0) {
         props <- props[!vapply(props, is.null, logical(1))]
     }
@@ -11,7 +11,7 @@ scoreIndicator <- function(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=N
         props = props,
         type = 'ScoreIndicator',
         namespace = 'dash_score_indicator',
-        propNames = c('id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value'),
+        propNames = c('id', 'fadedOpacity', 'lineGap', 'lineWidth', 'maxValue', 'stepsColors', 'value', 'width'),
         package = 'dashScoreIndicator'
         )
 
