@@ -2,7 +2,32 @@
   "src/lib/components/ScoreIndicator.react.js": {
     "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `value`\nwhich is editable by the user.",
     "displayName": "ScoreIndicator",
-    "methods": [],
+    "methods": [
+      {
+        "name": "resolveColor",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "color",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "resolveColorsArray",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "stepsColors",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
     "props": {
       "id": {
         "type": {

@@ -10,13 +10,46 @@ import ReactStoreIndicator from 'react-score-indicator'
  * which is editable by the user.
  */
 export default class ScoreIndicator extends Component {
+    resolveColor = (color) => {
+        // Check if the color is a valid hash color code
+        const isHashColor = /^#([0-9a-fA-F]{3}){1,2}$/.test(color);
+      
+        if (isHashColor) {
+          return color; // Return the hash color code as it is
+        } else {
+          // If not a hash color code, assume it's a CSS variable
+          const computedColor = getComputedStyle(document.documentElement).getPropertyValue(color.trim());
+      
+          // Check if the computed color is a valid hash color code
+          const isValidComputedColor = /^#([0-9a-fA-F]{3}){1,2}$/.test(computedColor);
+      
+          if (isValidComputedColor) {
+            return computedColor; // Return the hash color code obtained from the CSS variable
+          } else {
+            // If the computed color is still not valid, you may handle this case as per your requirements
+            console.error(`Invalid color or CSS variable: ${color}`);
+            return null; // or return a default color, throw an error, etc.
+          }
+        }
+    };
+    
+    resolveColorsArray = (stepsColors) => {
+        // Map each element in the array using the resolveColor function
+        const resolvedColors = stepsColors.map(resolveColor);
+      
+        // Filter out any null values that may have occurred during resolution
+        const validColors = resolvedColors.filter((color) => color !== null);
+      
+        return validColors;
+      };
     render() {
-        const {id, setProps, value, maxValue, stepsColors, lineWidth, lineGap, fadedOpacity} = this.props;
+        const { id, setProps, value, maxValue, stepsColors, lineWidth, lineGap, fadedOpacity } = this.props;
+        const resolvedColors = resolveColorsArray(stepsColors);
         return (
             <ReactStoreIndicator id ={id} 
                 value={value}
                 maxValue={maxValue}
-                stepsColors={stepsColors}
+                stepsColors={resolvedColors}
                 lineWidth={lineWidth}
                 lineGap={lineGap}
                 fadedOpacity={fadedOpacity}>
