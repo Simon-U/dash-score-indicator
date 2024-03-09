@@ -105,6 +105,17 @@
           "computed": false
         }
       },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
       "setProps": {
         "type": {
           "name": "func"

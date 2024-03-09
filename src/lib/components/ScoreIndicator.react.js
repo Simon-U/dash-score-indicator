@@ -91,7 +91,8 @@ ScoreIndicator.defaultProps = {
     lineWidth: 5,
     lineGap: 5,
     fadedOpacity: 40,
-    width: 200,
+  width: 200,
+  style: {},
 };
 ScoreIndicator.propTypes = {
     /**
@@ -140,7 +141,7 @@ ScoreIndicator.propTypes = {
     fadedOpacity: PropTypes.number,
 
     width: PropTypes.number,
-
+    style: PropTypes.object,
     /**
      * Dash-assigned callback that should be called to report property changes
      * to Dash, to make them available for callbacks.

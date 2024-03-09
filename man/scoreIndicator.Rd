@@ -11,7 +11,8 @@ ExampleComponent is an example component. It takes a property, `label`, and disp
 
 \usage{
 scoreIndicator(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=NULL,
-maxValue=NULL, stepsColors=NULL, value=NULL, width=NULL)
+maxValue=NULL, stepsColors=NULL, style=NULL, value=NULL,
+width=NULL)
 }
 
 \arguments{
@@ -35,6 +36,8 @@ maxValue=NULL, stepsColors=NULL, value=NULL, width=NULL)
   '#3da940',
   '#3da940',
     ]}
+
+\item{style}{Named list. }
 
 \item{value}{Numeric. Current score value}
 
