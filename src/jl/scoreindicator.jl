@@ -28,11 +28,12 @@ Keyword arguments:
   '#3da940',
     ]
 - `style` (Dict; optional)
+- `toClassification` (Bool; optional): Default is false, if true to coClassification turns number into low, medium, high
 - `value` (Real; optional): Current score value
 - `width` (Real; optional)
 """
 function scoreindicator(; kwargs...)
-        available_props = Symbol[:id, :fadedOpacity, :lineGap, :lineWidth, :maxValue, :stepsColors, :style, :value, :width]
+        available_props = Symbol[:id, :fadedOpacity, :lineGap, :lineWidth, :maxValue, :stepsColors, :style, :toClassification, :value, :width]
         wild_props = Symbol[]
         return Component("scoreindicator", "ScoreIndicator", "dash_score_indicator", available_props, wild_props; kwargs...)
 end

@@ -94,6 +94,17 @@
           "computed": false
         }
       },
+      "toClassification": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Default is false, if true to coClassification turns number into low, medium, high",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
       "width": {
         "type": {
           "name": "number"

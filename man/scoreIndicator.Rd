@@ -11,8 +11,8 @@ ExampleComponent is an example component. It takes a property, `label`, and disp
 
 \usage{
 scoreIndicator(id=NULL, fadedOpacity=NULL, lineGap=NULL, lineWidth=NULL,
-maxValue=NULL, stepsColors=NULL, style=NULL, value=NULL,
-width=NULL)
+maxValue=NULL, stepsColors=NULL, style=NULL,
+toClassification=NULL, value=NULL, width=NULL)
 }
 
 \arguments{
@@ -38,6 +38,8 @@ width=NULL)
     ]}
 
 \item{style}{Named list. }
+
+\item{toClassification}{Logical. Default is false, if true to coClassification turns number into low, medium, high}
 
 \item{value}{Numeric. Current score value}
 

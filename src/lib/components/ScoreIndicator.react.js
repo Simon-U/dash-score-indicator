@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import ReactStoreIndicator from 'react-score-indicator'
+import ReactScoreIndicator from './ReactScoreIndicator.react.'
 
 /**
  * ExampleComponent is an example component.
@@ -61,18 +61,19 @@ export default class ScoreIndicator extends Component {
       }
 
     render() {
-        const { id, setProps, value, maxValue, stepsColors, lineWidth, lineGap, fadedOpacity, width } = this.props;
+        const { id, setProps, value, maxValue, stepsColors, lineWidth, lineGap, fadedOpacity, width, toClassification } = this.props;
         const resolvedColors = this.resolveColorsArray(stepsColors);
         return (
-            <ReactStoreIndicator id ={id} 
+            <ReactScoreIndicator id ={id} 
                 value={value}
                 maxValue={maxValue}
                 stepsColors={resolvedColors}
                 lineWidth={lineWidth}
                 lineGap={lineGap}
                 width={width}
-                fadedOpacity={fadedOpacity}>
-                </ReactStoreIndicator>
+            fadedOpacity={fadedOpacity}
+            toClassification={toClassification}>
+                </ReactScoreIndicator>
         );
     }
 }
@@ -93,6 +94,7 @@ ScoreIndicator.defaultProps = {
     fadedOpacity: 40,
   width: 200,
   style: {},
+  toClassification: false,
 };
 ScoreIndicator.propTypes = {
     /**
@@ -139,7 +141,10 @@ ScoreIndicator.propTypes = {
      * Opacity of faded parts, default is 40
      */
     fadedOpacity: PropTypes.number,
-
+    /**
+     * Default is false, if true to coClassification turns number into low, medium, high
+     */
+    toClassification: PropTypes.bool,
     width: PropTypes.number,
     style: PropTypes.object,
     /**
